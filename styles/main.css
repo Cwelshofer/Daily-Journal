@@ -10,3 +10,38 @@ body {
     padding: 50px;
     margin: 20px;
   }
+
+  .secondList {
+    background-color: lightgrey;
+    width: 300px;
+    border: 15px solid green;
+    padding: 50px;
+    margin: 20px;
+  }
+
+  .thirdList {
+    background-color: lightgrey;
+    width: 300px;
+    border: 15px solid green;
+    padding: 50px;
+    margin: 20px;
+  }
+
+  h1,h2,h3,h4,h5,h6 {
+    font-family: fantasy;
+    letter-spacing: 2px;
+}
+
+.siteLogo {
+  height: 12rem;
+  
+}
+
+.title{
+  text-align: center;
+  line-height: 3px
+}
+
+.header {
+  display: flex
+}

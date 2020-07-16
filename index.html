@@ -1,46 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Colin's Daily Journal</title>
   <link rel="stylesheet" href="./styles/main.css">
 </head>
-<header class="title"> Colin's Daily Journal</header>
+<header class="header">
+<img class="journalLogo" src="./images/journallogo.png" />
+<h1 class="title"> Colin's Daily Journal</h1>
+</header>
 <body>
-  <img class="journallogo" src="./images/journallogo.png"/>
-  <header class="datefield">Calender</header>
+    <header class="datefield">Calender</header>
   <input type="date" id="Journal" name="Colin">
   <main class="main">
-  <div class="content--left">
-    <article class="concepts">
-      <h2 class="articleHeader">Concepts</h2>
-      <input type="text">
-    </article>
+    <div class="content--left">
+      <article class="concepts">
+        <h2 class="articleHeader">Concepts</h2>
+        <input type="text">
+      </article>
       <article class="journaleentry">
         <h3 class="journalheader">Journal Entry</h3>
         <textarea id="journalTextArea" name="journaleentry" rows="4" cols="50">
-        </textarea>   
-        </article>
-        <article>
-          <label for="cars">Mood:</label>
-          <select name="cars" id="cars">
-            <option value="Happy">Happy</option>
-            <option value="Sad">Sad</option>
-            <option value="Angry">Angry</option>
-            <option value="Bored">Bored</option>
-          </select>
-        </article>
-        <article>
-          <button type="button">Record Journal Entry</button>
-        </article>
-        <article>
-          <section>
-            <div class="list"></div>
-            <ol></ol>
-          </section>
-        </article>
-  </div>  
+        </textarea>
+      </article>
+      <article>
+        <label for="moods">Mood:</label>
+        <select name="moods" id="moods">
+          <option value="Happy">Happy</option>
+          <option value="Sad">Sad</option>
+          <option value="Angry">Angry</option>
+          <option value="Bored">Bored</option>
+        </select>
+      </article>
+      <article>
+        <button type="button">Record Journal Entry</button>
+      </article>
+      <article class="firstlist">
+          <div class="list"></div>
+          <ol></ol>
+      </article>
+      <article>
+          <div class="secondLists">
+          </div>
+      </article>
+      <article class="thirdLists">
+          <div class="thirdList">
+          </div>
+      </article>
+    </div>
   </main>
 </body>
 </html>
