@@ -8,48 +8,61 @@
   <link rel="stylesheet" href="./styles/main.css">
 </head>
 <header class="header">
-<img class="journalLogo" src="./images/journallogo.png" />
-<h1 class="title"> Colin's Daily Journal</h1>
+  <img class="journalLogo" src="./images/journallogo.png" />
+  <h1 class="title"> Colin's Daily Journal</h1>
 </header>
+
 <body>
-    <header class="datefield">Calender</header>
-  <input type="date" id="Journal" name="Colin">
   <main class="main">
     <div class="content--left">
-      <article class="concepts">
-        <h2 class="articleHeader">Concepts</h2>
-        <input type="text">
-      </article>
-      <article class="journaleentry">
-        <h3 class="journalheader">Journal Entry</h3>
-        <textarea id="journalTextArea" name="journaleentry" rows="4" cols="50">
+      <h2>Daily Journal</h2>
+      <form action="">
+        <fieldset class="dateOfEntry">
+          <label for="journalDate">Date of Entry</label>
+          <input type="date" name="journalDate" id="journalDate" style="
+          width: 130px;">
+        </fieldset>
+        <fieldset class="concept">
+          <label for="journalDate">Concepts covered</label>
+          <input type="text" style="
+          width: 126px;">
+        </fieldset>
+        <fieldset class="journalEntry">
+          <label for="journalDate">Journal Entry</label>
+          <textarea id="journalTextArea" name="journalEntry" rows="4" cols="50"
+            style="margin: 0px 347px 0px 0px; width: 128px; height: 52px;">
         </textarea>
-      </article>
-      <article>
-        <label for="moods">Mood:</label>
-        <select name="moods" id="moods">
-          <option value="Happy">Happy</option>
-          <option value="Sad">Sad</option>
-          <option value="Angry">Angry</option>
-          <option value="Bored">Bored</option>
-        </select>
-      </article>
-      <article>
-        <button type="button">Record Journal Entry</button>
-      </article>
-      <article class="firstlist">
+        </fieldset>
+        <fieldset class="moodEntry">
+          <label for="moods">Mood:</label>
+          <select name="moods" id="moods">
+            <option value="Happy">Happy</option>
+            <option value="Sad">Sad</option>
+            <option value="Angry">Angry</option>
+            <option value="Bored">Bored</option>
+          </select>
+        </fieldset>
+        <article class="recordButton">
+          <button type="button">Record Journal Entry</button>
+        </article>
+        <article id="entryLog">
+        </article>
+        <article class="firstlist">
           <div class="list"></div>
           <ol></ol>
-      </article>
-      <article>
-          <div class="secondLists">
+        </article>
+        <article class="secondLists">
+          <div class="secondList">
           </div>
-      </article>
-      <article class="thirdLists">
+        </article>
+        <article class="thirdLists">
           <div class="thirdList">
           </div>
-      </article>
+        </article>
     </div>
+    </form>
   </main>
+  <script type="module" src="./scripts/main.js">
+  </script>
 </body>
 </html>

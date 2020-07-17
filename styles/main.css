@@ -45,3 +45,32 @@ body {
 .header {
   display: flex
 }
+
+.journalEntry {
+  display: flex;
+  flex-direction: column;
+  width: 30em;
+  height: 85px;
+
+}
+
+.moodEntry {
+  display: flex;
+  flex-direction: column;
+  width: 30em;
+
+}
+
+.concept {
+  display: flex;
+  flex-direction: column;
+  width: 30em;
+}
+
+.dateOfEntry {
+  display: flex;
+  flex-direction: column;
+  width: 30em;
+}
+
+
